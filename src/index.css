@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    font-family: 'poppins', 'sans-serif';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-link:hover {
+    color: rgb(189, 42, 67);
+}
+
+.home-card .card {
+    flex-direction: row;
+}
+
+/* .home-card-img{
+} */
+
+.home-card-body {
+    background-color: #e3f2fd;
+    text-align: center;
+    width: 1000px;
+}
+
+.restuarant {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+.poppinstext {
+    font-family: 'poppins', 'sans-serif';
+    font-size: 1rem;
+}
+
+.heading {
+    color: rgb(255, 25, 64);
+}
+
+.item{
+    position: relative;
+    transition: all .5s ease-in;
+    border-radius: 0;
+    border: 0;
+}
+
+
+.item-banner{
+    position: absolute;
+    background-color: #e3f2fd;
+    width: 80px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-weight: bolder;
+    color: red;
+}
+
+.item img{
+    height: 300px;
+}
+
+.overlay-card{
+    padding: 10px;
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    visibility: none;
+    transition: .5s ease;
+    background-color: #e3f2fd;
+}
+
+.item-name{
+    padding: 15px;
+    font-size: 20px;
+}
+
+.item .overlay-card:hover{
+    top: 100px;
+}
+
+.week-card{
+    flex-direction: row;
+    border:0;
+    height: 100px;
+}
+
+.week-img{
+    width: 100px;
+    height: 100px;
+}
+
+.price-tag{
+    background-color: #e3f2fd;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: bold;
+    color: red;
+}
+
+.btn{
+    border: 0;
+}
+
+.extra{
+    height: 100px;
+}
+
+.contact-cont{
+    background-image: url('https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg');
+    padding: 100px 150px;
+}
+
+
+.whitetext{
+    color: white;
+}
+
+.footer-cont{
+    background-color: #e3f2fd;
+}
+
+
+@media (max-width:988px) {
+    .home-card .card{
+        flex-direction: column;
+    }
+
+    .home-card-body{
+        width: auto;
+    }
+
+    .week-card{
+       flex-direction: column;
+       height: auto; 
+       text-align: center;
+    }
+    
+    .week-img{
+        margin: auto;
+    }
+
+    .contact-cont{
+        padding: 50px 50px;
+    }
 }
